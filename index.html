@@ -12,8 +12,8 @@
   <div class="weather-app">
   <body>
     <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a city.." required  class="search-input"/>
+      <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter a city.." required  class="search-input" id="search-form-input"/>
         <input type="submit" value="Search" class="search-button"/>
       </form>
     </header>
@@ -21,7 +21,7 @@
     <div class="weather-data">
     <div >
       
-        <h1 class="weather-city">London</h1>
+        <h1 class="weather-city" id="city">London</h1>
         <p class="weather-details">
           Friday 14:51, clear sky <br />
           Humidity: <span class="air">50%</span>, Wind: <span class="air">6.17km/h</span>
@@ -54,5 +54,6 @@
       >
     </footer>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
