@@ -24,9 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-main {
-  padding: 30px;
-}
+
 .weather-city {
   margin: 0;
   font-size: 40px;
@@ -42,6 +40,9 @@ main {
 }
 a {
   color: #65c0ba;
+}
+.city-container {
+  margin-top: 15px;
 }
 h1 {
   color: black;
@@ -66,11 +67,12 @@ h1 {
 .weather-temperature {
   font-size: 65px;
   font-weight: 500;
-  margin-top: -10px;
+  margin-top: -20px;
 }
 .weather-icon {
   font-size: 70px;
-  margin-top: -23px;
+  margin-top: -10px;
+  margin-left: -10px;
   padding: 0, 30px, 0, 0;
 }
 .weather-display-number {
@@ -78,8 +80,35 @@ h1 {
 }
 .weather-unit {
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: -10px;
 }
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.weather-forecast-date {
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  margin-top: 10px;
+  color: #ff6473;
+  display: flex;
+  justify-content: center;
+}
+.weather-forecast-temperature {
+  padding: 10px;
+}
+
 footer {
   border-top: 1px solid #caf8f8;
   padding: 30px 0 0 0;

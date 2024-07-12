@@ -5,58 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meteo application</title>
     <link rel="stylesheet" href="src/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
   </head>
-  <div class="weather-app">
+
   <body>
-    <header>
-      <form class="search-form" id="search-form">
-        <input type="search" placeholder="Enter a city.." required  class="search-input" id="search-form-input"/>
-        <input type="submit" value="Search" class="search-button"/>
-      </form>
-    </header>
-    <main>
-    <div class="weather-data">
-    <div >
-      
-        <h1 class="weather-city" id="city"></h1>
-        <p class="weather-details">
-          <span id="time"></span> , <span id="description"></span>
-           <br />
-          Humidity: <span class="air" id="humidity">%</span>, Wind: <span class="air" id="wind"> Km/h</span>
-        </p>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div class="city-container">
+            <h1 class="weather-city" id="city"></h1>
+            <p class="weather-details">
+              <span id="time"></span> , <span id="description"></span>
+              <br />
+              Humidity: <span class="air" id="humidity">%</span>, Wind:
+              <span class="air" id="wind"> Km/h</span>
+            </p>
+          </div>
+
+          <div class="weather-box">
+            <div id="icon"></div>
+            <div class="weather-display-number">
+              <div
+                class="weather-temperature"
+                id="weather-app-temperature"
+              ></div>
+              <div class="weather-unit">°C</div>
+            </div>
+          </div>
         </div>
-      
-    
-    <div class="weather-box">
-      <div id="icon">
-     
-       </div>
-      <div class="weather-display-number">
-       <div class="weather-temperature" id="weather-app-temperature"></div>
-       <div class="weather-unit">°C</div>
-       </div>
-    </div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/Angelica2437" target="blank"
-        >Angelica Morales</a
-      >
-      , open-sourced on
-      <a
-        href="https://github.com/Angelica2437/meteo-practice-poject"
-        target="blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://stunning-gnome-318aae.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+        <div class="weather-forecast">
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tue</div>
+            <div class="weather-forecast-icon">🌤</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15°</strong>
+              </div>
+              <div class="weather-forecast-temperature">9°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Wed</div>
+            <div class="weather-forecast-icon">🌤</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15°</strong>
+              </div>
+              <div class="weather-forecast-temperature">9°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Thur</div>
+            <div class="weather-forecast-icon">🌤</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15°</strong>
+              </div>
+              <div class="weather-forecast-temperature">9°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Fri</div>
+            <div class="weather-forecast-icon">🌤</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15°</strong>
+              </div>
+              <div class="weather-forecast-temperature">9°</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Sat</div>
+            <div class="weather-forecast-icon">🌤</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15°</strong>
+              </div>
+              <div class="weather-forecast-temperature">9°</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/Angelica2437" target="blank"
+          >Angelica Morales</a
+        >
+        , open-sourced on
+        <a
+          href="https://github.com/Angelica2437/meteo-practice-poject"
+          target="blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://stunning-gnome-318aae.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
     </div>
     <script src="src/app.js"></script>
   </body>
