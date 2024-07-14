@@ -1,19 +1,19 @@
 body {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(166, 226, 229) 0%,
-    rgb(198, 232, 221) 100.2%
+  background: linear-gradient(
+    106.7deg,
+    rgb(245, 167, 191) -6.2%,
+    rgb(201, 218, 238) 46.4%,
+    rgb(164, 240, 229) 86.4%
   );
-
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
 }
 .weather-app {
   background-color: #ecfeff;
-  max-width: 600px;
+  max-width: 670px;
   margin: 55px auto;
   padding: 40px;
-  border-radius: 15px;
+  border-radius: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 header {
@@ -36,7 +36,7 @@ header {
 }
 .air {
   color: #ff6473;
-  font-weight: 400;
+  font-weight: 500;
 }
 a {
   color: #65c0ba;
@@ -91,6 +91,7 @@ h1 {
   text-align: center;
   color: black;
   font-size: 16px;
+  font-weight: 500;
   line-height: 20px;
   margin-bottom: 10px;
 }
